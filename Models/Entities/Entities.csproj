@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>Models.Entities</RootNamespace>
+        <PackageId>Entities</PackageId>
+        <AssemblyName>Models.Entities</AssemblyName>
+    </PropertyGroup>
+
+</Project>

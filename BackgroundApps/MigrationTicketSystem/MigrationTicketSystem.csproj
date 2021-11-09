@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AssemblyName>BackgroundApps.MigrationTicketSystem</AssemblyName>
+        <RootNamespace>BackgroundApps.MigrationTicketSystem</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Migrations" />
+      <Folder Include="Scripts\SP" />
+      <Folder Include="Scripts\Type" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Databases\TicketSystemContext\TicketSystemContext.csproj" />
+      <ProjectReference Include="..\..\Services\DataCommon\DataCommon.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Scripts\Seed\system.Menu.sql" />
+      <EmbeddedResource Include="Scripts\Seed\system.Menu.sql" />
+      <None Remove="Scripts\Seed\system.Role.sql" />
+      <EmbeddedResource Include="Scripts\Seed\system.Role.sql" />
+      <None Remove="Scripts\Seed\system.RoleAuthority.sql" />
+      <EmbeddedResource Include="Scripts\Seed\system.RoleAuthority.sql" />
+      <None Remove="Scripts\Seed\system.User.sql" />
+      <EmbeddedResource Include="Scripts\Seed\system.User.sql" />
+      <None Remove="Scripts\Index\system.RoleAuthority.UIX_RoIeID_MenuID.sql" />
+      <EmbeddedResource Include="Scripts\Index\system.RoleAuthority.UIX_RoIeID_MenuID.sql" />
+    </ItemGroup>
+
+</Project>

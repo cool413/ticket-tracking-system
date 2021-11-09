@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Models\Common\Common.csproj" />
+      <ProjectReference Include="..\..\Models\Messages\Messages.csproj" />
+      <ProjectReference Include="..\..\Services\Infrastructure\Infrastructure.csproj" />
+      <ProjectReference Include="..\..\Services\TicketSystemService\TicketSystemService.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.0" />
+      <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+    </ItemGroup>
+
+
+</Project>

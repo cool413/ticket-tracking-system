@@ -1,0 +1,18 @@
+﻿version: '3'
+
+services:
+  webticket:
+    image: clientswebticket:latest
+    build:
+      context: ./
+      dockerfile: Clients/WebTicketSystem/Dockerfile
+    container_name: webticket
+    stop_signal: SIGINT
+    ports:
+      - 8030:8030
+    environment:
+      - "ASPNETCORE_ENVIRONMENT="
+      - Serilog__WriteTo__0__Args__path=webticket.log
+      - "ConnectionStrings__TicketSystemConnectionString=Server=192.168.0.114,1533;Database=DEV_OPMCReport;User Id=sa;Password=Sa12345678;Application Name=WebTicketSystem"
+   
+
