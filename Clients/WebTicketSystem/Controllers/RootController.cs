@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebTicketSystem.Controllers
+namespace Clients.WebTicketSystem.Controllers
 {
     /// <summary>
     /// Health Check

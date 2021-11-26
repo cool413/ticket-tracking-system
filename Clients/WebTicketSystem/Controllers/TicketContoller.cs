@@ -13,7 +13,7 @@ using Models.Messages.Response;
 using Services.Infrastructure.Extensions;
 using Services.TicketSystemService;
 
-namespace WebTicketSystem.Controllers
+namespace Clients.WebTicketSystem.Controllers
 {
     /// <summary>
     /// 單據管理

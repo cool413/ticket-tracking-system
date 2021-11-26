@@ -1,4 +1,4 @@
-namespace WebTicketSystem
+namespace Clients.WebTicketSystem
 {
     internal static class Const
     {

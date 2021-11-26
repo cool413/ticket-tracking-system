@@ -7,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
 
-namespace WebTicketSystem
+namespace Clients.WebTicketSystem
 {
     public class Program
     {

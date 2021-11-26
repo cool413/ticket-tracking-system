@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Services.Infrastructure.Extensions;
 using Services.TicketSystemService;
 
-namespace WebTicketSystem
+namespace Clients.WebTicketSystem
 {
     public class Startup
     {
